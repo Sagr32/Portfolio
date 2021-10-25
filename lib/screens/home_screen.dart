@@ -77,8 +77,8 @@ class HomeScreen extends StatelessWidget {
               ),
               ResponsiveRowColumnItem(
                 rowFlex: 1,
-                child: Image.network(
-                  'https://i.ibb.co/5XZzytG/eezy-13-ai.png',
+                child: Image.asset(
+                  'assets/ai.png',
                 ),
               ),
             ],

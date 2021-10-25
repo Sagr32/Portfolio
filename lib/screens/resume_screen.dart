@@ -9,8 +9,8 @@ class ResumeScreen extends StatelessWidget {
     return Scaffold(
       appBar: const CustomAppBar(),
       body: Center(
-        child: Image.network(
-          'https://i.ibb.co/YPDH69W/cascade-3x.png',
+        child: Image.asset(
+          'cv.png',
         ),
       ),
     );

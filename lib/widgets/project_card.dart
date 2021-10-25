@@ -20,7 +20,7 @@ class ProjectCard extends StatelessWidget {
               Expanded(
                 flex: 40,
                 child: Image.network(
-                  'https://1.bp.blogspot.com/-pbg1o6Bb7FM/X3bI7pl04cI/AAAAAAAAF9c/aJOtHeIGzeU0kWFA7QI5uEOAgWhPxrz_QCLcBGAsYHQ/s16000/logo.png',
+                  'assets/filmov.png',
                 ),
               ),
               Expanded(

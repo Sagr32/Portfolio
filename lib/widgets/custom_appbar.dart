@@ -1,7 +1,5 @@
 import 'package:auto_route/src/router/auto_router_x.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/screens/projects_screen.dart';
-import 'package:portfolio/screens/resume_screen.dart';
 import 'package:portfolio/widgets/menu_text_button.dart';
 
 class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
@@ -19,7 +17,6 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
               onTap: () {
                 if (context.router.routeData.name != 'HomeScreen') {
                   context.router.replaceNamed('/');
-                  print(context.router.current.name);
                 }
               },
             ),
