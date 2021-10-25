@@ -16,7 +16,7 @@ class MenuTextButton extends StatelessWidget {
     return ResponsiveVisibility(
       visible: false,
       visibleWhen: const [
-        Condition.largerThan(name: TABLET),
+        Condition.largerThan(name: MOBILE),
       ],
       child: TextButton(
         style: TextButton.styleFrom(

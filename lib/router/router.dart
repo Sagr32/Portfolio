@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:portfolio/screens/home_screen.dart';
-import 'package:portfolio/screens/projects_screen.dart';
-import 'package:portfolio/screens/resume_screen.dart';
+import '../screens/home_screen.dart';
+import '../screens/projects_screen.dart';
+import '../screens/resume_screen.dart';
 
 @MaterialAutoRouter(
   replaceInRouteName: 'Page,Route',

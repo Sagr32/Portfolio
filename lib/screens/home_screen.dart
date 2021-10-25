@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:portfolio/constants/constants.dart';
-import 'package:portfolio/screens/projects_screen.dart';
-import 'package:portfolio/widgets/custom_appbar.dart';
-import 'package:portfolio/widgets/menu_text_button.dart';
-import 'package:portfolio/widgets/project_card.dart';
+import '../constants/constants.dart';
+import 'projects_screen.dart';
+import '../widgets/custom_appbar.dart';
+import '../widgets/custom_drawer.dart';
+import '../widgets/menu_text_button.dart';
+import '../widgets/project_card.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -15,7 +16,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final queryData = MediaQuery.of(context);
     return Scaffold(
-      appBar: const CustomAppBar(),
+      appBar: const CustomAppBar(
+        appBarTitle: kHomeLabel,
+      ),
+      drawer: const CustomDrawer(),
       body: ListView(
         children: [
           ResponsiveRowColumn(
@@ -35,11 +39,12 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        'I\'m Mohamed Sakr',
-                        style: Theme.of(context).textTheme.headline5,
+                        'Hi , I\'m Mohamed Sakr',
+                        style: Theme.of(context).textTheme.headline4,
                       ),
-                      const Text(
+                      Text(
                         'Flutter developer',
+                        style: Theme.of(context).textTheme.headline5,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -78,7 +83,7 @@ class HomeScreen extends StatelessWidget {
               ResponsiveRowColumnItem(
                 rowFlex: 1,
                 child: Image.asset(
-                  'assets/ai.png',
+                  'assets/images/ai.png',
                 ),
               ),
             ],

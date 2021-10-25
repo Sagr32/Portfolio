@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/constants/constants.dart';
+import '../constants/constants.dart';
 
 class ProjectCard extends StatelessWidget {
   const ProjectCard({Key? key}) : super(key: key);
@@ -19,8 +19,8 @@ class ProjectCard extends StatelessWidget {
             children: <Widget>[
               Expanded(
                 flex: 40,
-                child: Image.network(
-                  'assets/filmov.png',
+                child: Image.asset(
+                  'assets/images/filmov.png',
                 ),
               ),
               Expanded(

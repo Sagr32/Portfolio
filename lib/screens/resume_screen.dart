@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/widgets/custom_appbar.dart';
+import '../constants/constants.dart';
+import '../widgets/custom_appbar.dart';
+import '../widgets/custom_drawer.dart';
 
 class ResumeScreen extends StatelessWidget {
   const ResumeScreen({Key? key}) : super(key: key);
@@ -7,10 +9,11 @@ class ResumeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(),
+      appBar: const CustomAppBar(appBarTitle: kResumeLabel),
+      drawer: const CustomDrawer(),
       body: Center(
         child: Image.asset(
-          'cv.png',
+          'assets/images/cv.png',
         ),
       ),
     );

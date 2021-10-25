@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/router/router.gr.dart';
+import 'router/router.gr.dart';
 
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
