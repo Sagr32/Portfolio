@@ -6,10 +6,9 @@ Simple responsive portfolio made with flutter web
 
 <p float="left">
   <img src="https://i.imgur.com/DII7Ms4.png"  />
-  <img src="https://i.imgur.com/P6DMd3A.png"  />
-  <img src="https://i.imgur.com/ErmQawU.png" />
-  <img src="https://i.imgur.com/CGonvkQ.png" />
-  <img src="https://i.imgur.com/ErmQawU.png" />
+   <img src="https://i.imgur.com/CGonvkQ.png" />
+  <img src="https://i.imgur.com/F7AL6df.png"  />
+  <img src="https://i.imgur.com/o79CcO2.png" />
  
 </p>
 
