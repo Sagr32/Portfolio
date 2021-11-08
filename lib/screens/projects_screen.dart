@@ -28,15 +28,30 @@ class ProjectsScreen extends StatelessWidget {
             children: <ResponsiveRowColumnItem>[
               ResponsiveRowColumnItem(
                 rowFlex: 1,
-                child: ProjectCard(),
+                child: ProjectCard(
+                  assetPath: 'affilih',
+                  description: kAffilihDesc,
+                  projectUrl: kAffilihUrl,
+                  title: 'Affilih',
+                ),
               ),
               ResponsiveRowColumnItem(
                 rowFlex: 1,
-                child: ProjectCard(),
+                child: ProjectCard(
+                  assetPath: 'heavendoors',
+                  description: kHeavenDoorsDesc,
+                  projectUrl: kHeavenDoorsUrl,
+                  title: 'Heaven Doors',
+                ),
               ),
               ResponsiveRowColumnItem(
                 rowFlex: 1,
-                child: ProjectCard(),
+                child: ProjectCard(
+                  assetPath: 'madewhere',
+                  description: kMadeWhereDesc,
+                  projectUrl: kMadeWhereUrl,
+                  title: 'Made Where',
+                ),
               ),
             ],
           ),
@@ -49,15 +64,30 @@ class ProjectsScreen extends StatelessWidget {
             children: <ResponsiveRowColumnItem>[
               ResponsiveRowColumnItem(
                 rowFlex: 1,
-                child: ProjectCard(),
+                child: ProjectCard(
+                  assetPath: 'recipe',
+                  description: kRecipeDesc,
+                  projectUrl: kRecipeUrl,
+                  title: 'Recipe',
+                ),
               ),
               ResponsiveRowColumnItem(
                 rowFlex: 1,
-                child: ProjectCard(),
+                child: ProjectCard(
+                  assetPath: 'filmov',
+                  description: kFilmovDesc,
+                  projectUrl: kFilmovUrl,
+                  title: 'Filmov',
+                ),
               ),
               ResponsiveRowColumnItem(
                 rowFlex: 1,
-                child: ProjectCard(),
+                child: ProjectCard(
+                  assetPath: 'ai',
+                  description: kPortfolioDesc,
+                  projectUrl: kPortfolioUrl,
+                  title: 'Portfolio',
+                ),
               ),
             ],
           ),

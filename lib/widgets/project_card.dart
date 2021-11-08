@@ -1,8 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../constants/constants.dart';
 
 class ProjectCard extends StatelessWidget {
-  const ProjectCard({Key? key}) : super(key: key);
+  final String assetPath;
+  final String title;
+  final String description;
+  final String projectUrl;
+
+  const ProjectCard(
+      {Key? key,
+      required this.assetPath,
+      required this.title,
+      required this.description,
+      required this.projectUrl})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +22,11 @@ class ProjectCard extends StatelessWidget {
     final height = MediaQuery.of(context).size.height;
     return Card(
       child: InkWell(
-        onTap: () {},
+        onTap: () async {
+          await canLaunch(projectUrl)
+              ? await launch(projectUrl)
+              : throw 'Could not launch Link';
+        },
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
@@ -20,7 +36,7 @@ class ProjectCard extends StatelessWidget {
               Expanded(
                 flex: 40,
                 child: Image.asset(
-                  'assets/images/filmov.png',
+                  'assets/images/$assetPath.png',
                 ),
               ),
               Expanded(
@@ -35,14 +51,14 @@ class ProjectCard extends StatelessWidget {
                     direction: Axis.horizontal,
                     children: <Widget>[
                       Text(
-                        'Filmov',
+                        title,
                         style: Theme.of(context).textTheme.headline6,
                       ),
                       SizedBox(
                         height: height * .01,
                       ),
                       Text(
-                        kLongText,
+                        description,
                         textScaleFactor: 1.2,
                         style: Theme.of(context).textTheme.caption,
                       ),
