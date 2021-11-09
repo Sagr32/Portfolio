@@ -13,7 +13,6 @@ import 'package:flutter/material.dart' as _i5;
 
 import '../screens/home_screen.dart' as _i1;
 import '../screens/projects_screen.dart' as _i2;
-import '../screens/resume_screen.dart' as _i3;
 
 class AppRouter extends _i4.RootStackRouter {
   AppRouter([_i5.GlobalKey<_i5.NavigatorState>? navigatorKey])
@@ -29,17 +28,12 @@ class AppRouter extends _i4.RootStackRouter {
       return _i4.MaterialPageX<dynamic>(
           routeData: routeData, child: const _i2.ProjectsScreen());
     },
-    ResumeScreen.name: (routeData) {
-      return _i4.MaterialPageX<dynamic>(
-          routeData: routeData, child: const _i3.ResumeScreen());
-    }
   };
 
   @override
   List<_i4.RouteConfig> get routes => [
         _i4.RouteConfig(HomeScreen.name, path: '/'),
         _i4.RouteConfig(ProjectsScreen.name, path: '/projects-screen'),
-        _i4.RouteConfig(ResumeScreen.name, path: '/resume-screen')
       ];
 }
 
@@ -55,11 +49,4 @@ class ProjectsScreen extends _i4.PageRouteInfo<void> {
   const ProjectsScreen() : super(name, path: '/projects-screen');
 
   static const String name = 'ProjectsScreen';
-}
-
-/// generated route for [_i3.ResumeScreen]
-class ResumeScreen extends _i4.PageRouteInfo<void> {
-  const ResumeScreen() : super(name, path: '/resume-screen');
-
-  static const String name = 'ResumeScreen';
 }

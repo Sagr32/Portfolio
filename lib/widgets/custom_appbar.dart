@@ -1,5 +1,6 @@
 import 'package:auto_route/src/router/auto_router_x.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../constants/constants.dart';
 import 'menu_text_button.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -63,10 +64,10 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
             ),
             MenuTextButton(
               text: kResumeLabel,
-              onTap: () {
-                if (context.router.current.name != 'ResumeScreen') {
-                  context.router.replaceNamed('/resume-screen');
-                }
+              onTap: () async {
+                await canLaunch(kResumeLink)
+                    ? await launch(kResumeLink)
+                    : throw 'Could not launch Link';
               },
             ),
             const SizedBox(

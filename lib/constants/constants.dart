@@ -67,3 +67,7 @@ const String kFilmovUrl =
 
 /// portfolio showcase url
 const String kPortfolioUrl = 'https://github.com/Sagr32/Portfolio';
+
+/// resume link on google drive
+const String kResumeLink =
+    'https://drive.google.com/file/d/1MfO7ewtFdv6vjDSF3Q4CHU3bBfVdS-bZ/view?usp=sharing';
