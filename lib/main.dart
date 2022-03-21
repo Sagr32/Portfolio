@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:url_strategy/url_strategy.dart';
 import 'router/router.gr.dart';
 
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:responsive_framework/responsive_wrapper.dart';
 
 void main() {
+  setPathUrlStrategy();
   runApp(MyApp());
 }
 
