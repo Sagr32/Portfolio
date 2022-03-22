@@ -8,10 +8,6 @@ const String kLinkedinLink = 'https://www.linkedin.com/in/mohamed-sagr/';
 const String kStackOverFlowLink =
     'https://stackoverflow.com/users/12638640/mohamed-sagr';
 
-/// dummy long text as a placeholder
-const String kLongText =
-    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s';
-
 /// Home label
 const String kHomeLabel = 'HOME';
 
@@ -23,7 +19,7 @@ const String kResumeLabel = 'RESUME';
 
 /// affilih app description
 const String kAffilihDesc =
-    'Affilih Mobile app for Affilih.com using flutter for both (Vendor , Affiliator) , Itgives them the ability to manage their accounts .';
+    'Affilih Mobile app for Affilih.com using flutter for both (Vendor , Affiliator) , It gives them the ability to manage their accounts .';
 
 /// heaven door app description
 const String kHeavenDoorsDesc =
@@ -44,6 +40,37 @@ const String kFilmovDesc =
 /// portfolio description
 const String kPortfolioDesc =
     'Simple responsive portfolio made with flutter web';
+
+/// Tbny app description
+const String kTbnyDesc =
+    'App that helps users in adoptiong pets , searching for lost pets and publishing ads about their lost pets based on governorate and other filters';
+
+/// Tbny landing page description
+const String kTbnyLandingDesc =
+    'Landing page for Tbny app made with flutter web';
+
+/// Zero driver app description
+const String kZeroDriverDesc =
+    'Driver can see multiple offers from diffrent clients in realtime with notification , and can accept any offer he wants';
+
+/// Zero client app description
+const String kZeroClientDesc =
+    'Cab car app using flutter ,Socket io and RESTful api .\nClient can order (car , motorcycle or truck ) with any price he wants as offer with notification on any update';
+
+/// Tbny app Url
+const String kTbnyUrl =
+    'https://play.google.com/store/apps/details?id=com.tbny.online';
+
+/// Tbny landing page
+const String kTbnyLandingUrl = 'http://tbny.online';
+
+/// Zero driver app url
+const String kZeroDriverUrl =
+    'https://play.google.com/store/apps/details?id=com.perfecttaxi.driver';
+
+/// Zero client app url
+const String kZeroClientUrl =
+    'https://play.google.com/store/apps/details?id=com.perfectTaxi.customer';
 
 /// affilih showcase url
 const String kAffilihUrl =

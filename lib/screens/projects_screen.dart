@@ -29,6 +29,51 @@ class ProjectsScreen extends StatelessWidget {
               ResponsiveRowColumnItem(
                 rowFlex: 1,
                 child: ProjectCard(
+                  assetPath: 'tbny',
+                  description: kTbnyDesc,
+                  projectUrl: kTbnyUrl,
+                  title: 'Tbny',
+                ),
+              ),
+              ResponsiveRowColumnItem(
+                rowFlex: 1,
+                child: ProjectCard(
+                  assetPath: 'tbny',
+                  description: kTbnyLandingDesc,
+                  projectUrl: kTbnyLandingUrl,
+                  title: 'Tbny.Online',
+                ),
+              ),
+              ResponsiveRowColumnItem(
+                rowFlex: 1,
+                child: ProjectCard(
+                  assetPath: 'zero',
+                  description: kZeroClientDesc,
+                  projectUrl: kZeroClientUrl,
+                  title: 'Zero-Client',
+                ),
+              ),
+            ],
+          ),
+          ResponsiveRowColumn(
+            rowMainAxisAlignment: MainAxisAlignment.center,
+            layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
+                ? ResponsiveRowColumnType.COLUMN
+                : ResponsiveRowColumnType.ROW,
+            // ignore: prefer_const_literals_to_create_immutables
+            children: <ResponsiveRowColumnItem>[
+              ResponsiveRowColumnItem(
+                rowFlex: 1,
+                child: ProjectCard(
+                  assetPath: 'zero',
+                  description: kZeroDriverDesc,
+                  projectUrl: kZeroDriverUrl,
+                  title: 'Zero-Driver',
+                ),
+              ),
+              ResponsiveRowColumnItem(
+                rowFlex: 1,
+                child: ProjectCard(
                   assetPath: 'affilih',
                   description: kAffilihDesc,
                   projectUrl: kAffilihUrl,
@@ -42,15 +87,6 @@ class ProjectsScreen extends StatelessWidget {
                   description: kHeavenDoorsDesc,
                   projectUrl: kHeavenDoorsUrl,
                   title: 'Heaven Doors',
-                ),
-              ),
-              ResponsiveRowColumnItem(
-                rowFlex: 1,
-                child: ProjectCard(
-                  assetPath: 'madewhere',
-                  description: kMadeWhereDesc,
-                  projectUrl: kMadeWhereUrl,
-                  title: 'Made Where',
                 ),
               ),
             ],
@@ -83,10 +119,10 @@ class ProjectsScreen extends StatelessWidget {
               ResponsiveRowColumnItem(
                 rowFlex: 1,
                 child: ProjectCard(
-                  assetPath: 'ai',
-                  description: kPortfolioDesc,
-                  projectUrl: kPortfolioUrl,
-                  title: 'Portfolio',
+                  assetPath: 'madewhere',
+                  description: kMadeWhereDesc,
+                  projectUrl: kMadeWhereUrl,
+                  title: 'Made Where',
                 ),
               ),
             ],

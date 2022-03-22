@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../constants/constants.dart';
 
 class ProjectCard extends StatelessWidget {
   final String assetPath;
